@@ -156,6 +156,68 @@ export default function Home() {
       </section>
 
 
+ {/* Our Story Section */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="bg-card shadow-xl">
+            <CardContent className="p-8 lg:p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                {/* Left Side - Text Content */}
+                <div className="space-y-6">
+                  <div>
+                    <h2 className="text-3xl lg:text-4xl font-serif text-foreground font-bold mb-4">
+                      Our Story
+                    </h2>
+                    <div className="w-24 h-1 bg-primary mb-6"></div>
+                  </div>
+                  
+                  <div className="space-y-4 text-foreground">
+                    <p className="text-lg leading-relaxed">
+                      YAS TRADERS is passionate about bringing you the finest quality honey and dry fruits. 
+                      For over 5 years, we have been sourcing premium products from across India and beyond, 
+                      ensuring that every item meets our high standards of quality and authenticity.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed">
+                      We work directly with local farmers and beekeepers, building strong relationships 
+                      that allow us to maintain sustainable and ethical practices. Our commitment to 
+                      responsible sourcing ensures that you receive not only delicious products but also 
+                      items that are produced with care for both people and the environment.
+                    </p>
+                    
+                    <p className="text-lg leading-relaxed">
+                      Our mission is to preserve traditional harvesting methods while delivering authentic 
+                      flavors across India. We believe in the power of natural, unprocessed ingredients 
+                      and strive to bring you the purest forms of nature's bounty.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Right Side - Abstract Graphic */}
+                <div className="flex justify-center lg:justify-end">
+                  <div className="relative">
+                    <div className="w-64 h-64 lg:w-80 lg:h-80 bg-secondary rounded-lg flex items-center justify-center p-8">
+                      <div className="relative w-full h-full">
+                        {/* Large organic shape (teardrop/nut shape) */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="w-48 h-64 lg:w-56 lg:h-72 bg-foreground rounded-full transform rotate-12 relative">
+                            {/* Dark brown circle inside */}
+                            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-muted-foreground rounded-full"></div>
+                            {/* Small rectangular icon */}
+                            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-4 h-6 bg-muted-foreground rounded-sm"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+
 
       {/* Background Pattern */}
       <div className="fixed inset-0 pointer-events-none opacity-5">
