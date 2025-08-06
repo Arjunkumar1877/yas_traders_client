@@ -1,7 +1,6 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -29,7 +28,7 @@ const ContactSection = () => {
           </h2>
           <div className="w-24 h-1 bg-golden-400 mx-auto mb-6"></div>
           <p className="text-lg text-brown-700 max-w-3xl mx-auto leading-relaxed">
-            Have questions about our products or want to place a bulk order? Reach out to us and we'll get back to you as soon as possible.
+            Have questions about our products or want to place a bulk order? Reach out to us and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
 

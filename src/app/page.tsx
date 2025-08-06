@@ -6,10 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import { Star } from "lucide-react";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
@@ -27,7 +25,7 @@ export default function Home() {
                 Premium Honey & Dry Fruits
               </h1>
               <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
-                Experience the authentic taste of nature's finest treasures,
+                Experience the authentic taste of nature&apos;s finest treasures,
                 sourced from the most pristine regions and delivered across
                 India.
               </p>
@@ -143,7 +141,7 @@ export default function Home() {
                       Our mission is to preserve traditional harvesting methods
                       while delivering authentic flavors across India. We
                       believe in the power of natural, unprocessed ingredients
-                      and strive to bring you the purest forms of nature's
+                      and strive to bring you the purest forms of nature&apos;s
                       bounty.
                     </p>
                   </div>
@@ -474,9 +472,9 @@ export default function Home() {
 
                 {/* Quote */}
                 <p className="text-foreground italic">
-                  "The quality of YAS TRADERS products is exceptional. Their
-                  honey is pure and the dry fruits are always fresh. I've been a
-                  loyal customer for over 2 years now."
+                  &ldquo;The quality of YAS TRADERS products is exceptional. Their
+                  honey is pure and the dry fruits are always fresh. I&apos;ve been a
+                  loyal customer for over 2 years now.&rdquo;
                 </p>
 
                 {/* Customer Info */}
@@ -513,9 +511,9 @@ export default function Home() {
 
                 {/* Quote */}
                 <p className="text-foreground italic">
-                  "As a distributor, YAS TRADERS has been incredibly supportive.
+                  &ldquo;As a distributor, YAS TRADERS has been incredibly supportive.
                   Their products sell well and the quality is consistently
-                  excellent. Great partnership!"
+                  excellent. Great partnership!&rdquo;
                 </p>
 
                 {/* Customer Info */}
@@ -552,9 +550,9 @@ export default function Home() {
 
                 {/* Quote */}
                 <p className="text-foreground italic">
-                  "The B2B partnership with YAS TRADERS has been fantastic.
+                  &ldquo;The B2B partnership with YAS TRADERS has been fantastic.
                   Their export quality products and reliable delivery have
-                  helped us expand our business."
+                  helped us expand our business.&rdquo;
                 </p>
 
                 {/* Customer Info */}
