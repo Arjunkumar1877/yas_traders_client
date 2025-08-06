@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import ContactSection from '@/components/ContactSection';
 
 export default function Home() {
   return (
@@ -471,7 +472,7 @@ export default function Home() {
         </div>
       </section>
 
-
+<ContactSection />
 
       {/* Background Pattern */}
       <div className="fixed inset-0 pointer-events-none opacity-5">
