@@ -1,12 +1,22 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
@@ -26,21 +36,36 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-foreground hover:text-muted-foreground transition-colors font-medium">
+            <button 
+              onClick={() => scrollToSection('home')} 
+              className="text-foreground hover:text-muted-foreground transition-colors font-medium cursor-pointer"
+            >
               Home
-            </Link>
-            <Link href="/products" className="text-foreground hover:text-muted-foreground transition-colors font-medium">
+            </button>
+            <button 
+              onClick={() => scrollToSection('products')} 
+              className="text-foreground hover:text-muted-foreground transition-colors font-medium cursor-pointer"
+            >
               Products
-            </Link>
-            <Link href="/about" className="text-foreground hover:text-muted-foreground transition-colors font-medium">
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="text-foreground hover:text-muted-foreground transition-colors font-medium cursor-pointer"
+            >
               About Us
-            </Link>
-            <Link href="/work-with-us" className="text-foreground hover:text-muted-foreground transition-colors font-medium">
+            </button>
+            <button 
+              onClick={() => scrollToSection('work-with-us')} 
+              className="text-foreground hover:text-muted-foreground transition-colors font-medium cursor-pointer"
+            >
               Work With Us
-            </Link>
-            <Link href="/contact" className="text-foreground hover:text-muted-foreground transition-colors font-medium">
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="text-foreground hover:text-muted-foreground transition-colors font-medium cursor-pointer"
+            >
               Contact
-            </Link>
+            </button>
           </nav>
 
           {/* Shopping Cart */}
@@ -78,41 +103,36 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
-              <Link
-                href="/"
-                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              <button
+                onClick={() => scrollToSection('home')}
+                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
                 Home
-              </Link>
-              <Link
-                href="/products"
-                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('products')}
+                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
                 Products
-              </Link>
-              <Link
-                href="/about"
-                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('about')}
+                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
                 About Us
-              </Link>
-              <Link
-                href="/work-with-us"
-                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('work-with-us')}
+                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
                 Work With Us
-              </Link>
-              <Link
-                href="/contact"
-                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="text-foreground hover:text-muted-foreground block px-3 py-2 rounded-md text-base font-medium w-full text-left"
               >
                 Contact
-              </Link>
+              </button>
             </div>
           </div>
         )}

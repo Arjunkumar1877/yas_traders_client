@@ -2,12 +2,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section id="home" className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Hero Content */}
@@ -45,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Promotional Banner */}
-      <section className="bg-accent border-t border-border">
+      <section id="promotions" className="bg-accent border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-center space-x-3 text-foreground">
             <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +62,7 @@ export default function Home() {
 
 
       {/* Products Section */}
-      <section className="py-16 lg:py-24">
+      <section id="products" className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -158,7 +159,7 @@ export default function Home() {
 
 
  {/* Our Story Section */}
-      <section className="py-16 lg:py-24">
+      <section id="about" className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-card shadow-xl">
             <CardContent className="p-8 lg:p-12">
@@ -221,7 +222,7 @@ export default function Home() {
 
 
 {/* Work With Us Section */}
-      <section className="py-16 lg:py-24">
+      <section id="work-with-us" className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -368,7 +369,7 @@ export default function Home() {
             
 
       {/* What Our Customers Say Section */}
-      <section className="py-16 lg:py-24">
+      <section id="testimonials" className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -472,8 +473,11 @@ export default function Home() {
         </div>
       </section>
 
+<section id="contact">
 <ContactSection />
+</section>
 
+<Footer />
       {/* Background Pattern */}
       <div className="fixed inset-0 pointer-events-none opacity-5">
         <div className="absolute inset-0" style={{
