@@ -580,7 +580,49 @@ export default function Home() {
       <section id="contact">
         <ContactSection />
       </section>
-
+      {/* Location Section */}
+      <section className="py-16 lg:py-24 bg-accent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="flex justify-center mb-6">
+              <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-serif text-foreground mb-4">
+              YAS TRADERS Location
+            </h3>
+            <p className="text-lg text-muted-foreground">
+              Vallakkadavu, Trivandrum 695008, Kerala, India
+            </p>
+          </div>
+          
+          {/* Google Maps */}
+          <div className="w-full">
+            <div className="bg-card rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-64">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15778.123456789!2d76.9365!3d8.5241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b7c7c7c7c7c%3A0x7c7c7c7c7c7c7c!2sVallakkadavu%2C%20Trivandrum%2C%20Kerala%20695008!5e0!3m2!1sen!2sin!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="YAS TRADERS Location"
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+              <div className="p-4 bg-card">
+                <p className="text-sm text-muted-foreground text-center">
+                  📍 Vallakkadavu, Trivandrum 695008, Kerala, India
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
       {/* Background Pattern */}
       <div className="fixed inset-0 pointer-events-none opacity-5">
